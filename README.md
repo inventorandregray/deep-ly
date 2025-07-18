@@ -30,7 +30,7 @@ pip install torch transformers
 
 ## 🧠 Usage
 
-Run a model from Hugging Face with your custom prompt:
+Run any Hugging Face model with your custom prompt:
 
 ```bash
 python main.py \
@@ -39,15 +39,3 @@ python main.py \
   --max_tokens 100 \
   --temperature 0.8 \
   --top_k 50
-
-You can use any of the following Hugging Face models (and more):
-●	gpt2
-
-●	mistralai/Mistral-7B-Instruct-v0.1
-
-●	meta-llama/Llama-2-7b-chat-hf
-
-●	google/gemma-7b
-
-●	NousResearch/Nous-Hermes-2-Mistral-7B
-
