@@ -26,3 +26,69 @@ Make sure you have Python 3.8+ installed.
 git clone https://github.com/yourusername/deeply.git
 cd deeply
 pip install torch transformers
+
+
+
+
+
+🧠 Usage
+Run a model from Hugging Face with your custom prompt:
+
+bash
+Copy
+Edit
+python main.py \
+  --model "tiiuae/falcon-7b-instruct" \
+  --prompt "Once upon a time in Belize," \
+  --max_tokens 100 \
+  --temperature 0.8 \
+  --top_k 50
+You can use any of the following Hugging Face models (and more):
+
+gpt2
+
+mistralai/Mistral-7B-Instruct-v0.1
+
+meta-llama/Llama-2-7b-chat-hf
+
+google/gemma-7b
+
+NousResearch/Nous-Hermes-2-Mistral-7B
+
+🧱 Project Structure
+bash
+Copy
+Edit
+deeply/
+├── main.py               # Entry point with CLI
+├── src/
+│   ├── model_loader.py   # Loads model/tokenizer
+│   └── utils.py          # Core inference loop
+└── LICENSE               # MIT License
+🛠️ Development Goals
+Add web server (FastAPI)
+
+Add batching / KV caching profiler
+
+Enable quantized model support (e.g., GGUF or AWQ)
+
+Docker container
+
+📄 License
+MIT License © 2025 Andre Gray
+
+🌐 Acknowledgments
+Nano _vLLM for inspiration
+
+Hugging Face Transformers for the model zoo
+
+
+### ✅ Next Steps:
+
+1. Replace `"yourusername"` with your actual GitHub username.
+2. Create a `.gitignore` (I can help generate it).
+3. Optionally add a `requirements.txt` file for easy install:
+torch
+Transformers
+Vbnet
+
