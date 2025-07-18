@@ -27,9 +27,7 @@ git clone https://github.com/yourusername/deeply.git
 cd deeply
 pip install torch transformers
 
-
-
-
+---
 
 🧠 Usage
 Run a model from Hugging Face with your custom prompt:
@@ -56,9 +54,6 @@ google/gemma-7b
 NousResearch/Nous-Hermes-2-Mistral-7B
 
 🧱 Project Structure
-bash
-Copy
-Edit
 deeply/
 ├── main.py               # Entry point with CLI
 ├── src/
@@ -92,3 +87,22 @@ torch
 Transformers
 Vbnet
 
+---
+
+## 📌 How to build and run with Docker
+bash
+
+docker build -t deeply-llm .
+docker run -p 8000:8000 deeply-llm
+Then open http://localhost:8000/docs to test the interactive Swagger UI.
+
+
+
+Summary:
+●	Dockerfile uses Python 3.10 slim, installs dependencies, exposes port 8000, and runs FastAPI.
+
+●	FastAPI app exposes /generate POST endpoint to run text generation.
+
+●	Models are cached in memory to improve performance.
+
+●	Returns generated text as JSON.
