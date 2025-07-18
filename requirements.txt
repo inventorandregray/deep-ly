@@ -1,0 +1,4 @@
+torch>=2.0.0
+transformers>=4.36.0
+
+✅ This ensures compatibility with current LLMs and newer model APIs like Mistral, LLaMA 2, Gemma, etc
