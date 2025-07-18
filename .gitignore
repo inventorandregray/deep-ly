@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Python packaging
+*.egg
+*.egg-info/
+dist/
+build/
+
+# PyTorch cache
+~/.torch/
+~/.cache/
+
+# Transformers cache
+~/.huggingface/
+~/.local/share/huggingface/
+*.safetensors
+*.bin
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# MacOS / Linux / Windows files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
