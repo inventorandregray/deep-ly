@@ -26,16 +26,3 @@ Make sure you have Python 3.8+ installed.
 git clone https://github.com/yourusername/deeply.git
 cd deeply
 pip install torch transformers
-
-
-## 🧠 Usage
-
-Run any Hugging Face model with your custom prompt:
-
-```bash
-python main.py \
-  --model "tiiuae/falcon-7b-instruct" \
-  --prompt "Once upon a time in Belize," \
-  --max_tokens 100 \
-  --temperature 0.8 \
-  --top_k 50
